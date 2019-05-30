@@ -12,3 +12,4 @@
 import './block/simple-block/index.js';
 import './block/rich-text-block/index.js';
 import './block/media-upload-block/index.js';
+import './block/card-block/index.js';
