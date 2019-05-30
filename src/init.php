@@ -64,14 +64,14 @@ function demo_block_cgb_block_assets() { // phpcs:ignore
 	 * @since 1.16.0
 	 */
 	register_block_type(
-		'cgb/block-demo-block', array(
+		'cgb/block-demo-block', [
 			// Enqueue blocks.style.build.css on both frontend & backend.
 			'style'         => 'demo_block-cgb-style-css',
 			// Enqueue blocks.build.js in the editor only.
 			'editor_script' => 'demo_block-cgb-block-js',
 			// Enqueue blocks.editor.build.css in the editor only.
 			'editor_style'  => 'demo_block-cgb-block-editor-css',
-		)
+		]
 	);
 
 	/**
@@ -85,16 +85,20 @@ function demo_block_cgb_block_assets() { // phpcs:ignore
 	 * @since 1.16.0
 	 */
 	register_block_type(
-		'cgb/rich-text-block', array(
+		'cgb/rich-text-block', [
 			// Enqueue blocks.style.build.css on both frontend & backend.
 			'style'         => 'demo_block-cgb-style-css',
 			// Enqueue blocks.build.js in the editor only.
 			'editor_script' => 'demo_block-cgb-block-js',
 			// Enqueue blocks.editor.build.css in the editor only.
 			'editor_style'  => 'demo_block-cgb-block-editor-css',
-		)
+		]
 	);
+
 }
 
 // Hook: Block assets.
 add_action( 'init', 'demo_block_cgb_block_assets' );
+
+
+//include( $plugin_dir_path( __FILE__ ) . 'block/latest-posts-block/index.php' );

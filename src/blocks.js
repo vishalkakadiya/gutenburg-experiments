@@ -9,7 +9,8 @@
  * Webpack is compiling as the input file.
  */
 
-import './block/simple-block/index.js';
-import './block/rich-text-block/index.js';
-import './block/media-upload-block/index.js';
-import './block/card-block/index.js';
+import './block/simple-block'; // NOTE: index.js will be automatically loading, don't need to specify
+import './block/rich-text-block'; // NOTE: index.js will be automatically loading, don't need to specify
+import './block/media-upload-block'; // NOTE: index.js will be automatically loading, don't need to specify
+import './block/card-block'; // NOTE: index.js will be automatically loading, don't need to specify
+import './block/latest-posts-block'; // NOTE: index.js will be automatically loading, don't need to specify
