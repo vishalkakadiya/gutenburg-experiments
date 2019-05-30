@@ -20,3 +20,12 @@ Below you will find some information on how to run scripts.
 - Provides all the configurations so you can customize the project as you want.
 - It's a one-way street, `eject` and you have to maintain everything yourself.
 - You don't normally have to `eject` a project because by ejecting you lose the connection with `create-guten-block` and from there onwards you have to update and maintain all the dependencies on your own.
+
+## Video Reference - Huge thanks to Pradip Debnath for below tutorials
+
+##### Note: Below all videos are in HINDI language - indian native language :)
+
+- Static Block 👉  https://www.youtube.com/watch?v=z3UHoTT8sm4&t=4s
+- Rich Text Block 👉  https://www.youtube.com/watch?v=13cE9amrU7c
+- Media Upload Block 👉  https://www.youtube.com/watch?v=b6bdgOyoC74
+- Card Block(Above all 3 in one block) 👉  https://www.youtube.com/watch?v=j2ebxTRT178
