@@ -81,9 +81,6 @@ registerBlockType( 'cgb/latest-posts-block', {
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
 	 */
 	save: function( props ) {
-		return (
-			<div>
-			</div>
-		);
+		return null;
 	},
 } );

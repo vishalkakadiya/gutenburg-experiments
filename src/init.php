@@ -101,4 +101,4 @@ function demo_block_cgb_block_assets() { // phpcs:ignore
 add_action( 'init', 'demo_block_cgb_block_assets' );
 
 
-//include( $plugin_dir_path( __FILE__ ) . 'block/latest-posts-block/index.php' );
+include( plugin_dir_path( __FILE__ ) . 'block/latest-posts-block/index.php' );
