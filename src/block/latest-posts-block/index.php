@@ -13,27 +13,25 @@ function vk_register_latest_post_block() {
 
 function vk_render_latest_posts() {
 
-	$latest_posts = wp_get_recent_posts(
+	$query = new \WP_Query(
 		[
-			'numberposts' => 3,
+			'post_type'   => 'post',
 			'post_status' => 'publish',
 		]
 	);
 
-	if ( empty( $latest_posts ) ) {
+	if ( empty( $query->posts ) ) {
 		echo '<p>No posts</p>';
 	}
 
 	$posts_output = '<div class="latest-posts-block">';
 
-	foreach ( $latest_posts as $latest_post ) {
-
-		$post_id = $latest_post['ID'];
+	foreach ( $query->posts as $latest_post ) {
 
 		$posts_output .= sprintf(
 			'<div class="post-title"><h2><a href="%s">%s</a></h2></div>',
-			get_permalink( $post_id ),
-			get_the_title( $post_id )
+			get_permalink( $latest_post->ID ),
+			esc_html( $latest_post->post_title )
 		);
 	}
 
